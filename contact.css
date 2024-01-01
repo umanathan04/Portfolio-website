@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0a14;
+   
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background-color: black;
+    padding:20px;
+    background-attachment: fixed;
+
+    
+}
+.header a{
+    color:white;
+    text-decoration:none;
+}
+.header a i{
+    color:#0ef;
+    /* padding:2px; */
+}
+.header .logo{
+    font-size:34px;
+    color:#fff;
+    font-weight:600;
+
+}
+.header .navbar{
+    display:flex;
+    gap:30px;
+}
+.header .navbar a{
+        font-size:23px;
+        color:#fff;
+        font-weight:500;
+        /* padding:0px 20px; */
+        
+}
+.header .navbar a:hover{
+    color:#a0ef
+}
+.header input{
+    display:none;
+}
+.header label i{
+  display: none;
+}
+
+/* header end */
+.section1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+    width:100%;
+
+}
+.container1{
+    display:flex;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+     color:white;
+     margin-top:30px;
+
+}
+
+
+.section1 .ct{
+     color:white;
+     font-size:3.4rem;
+}
+.section1 .me1{
+    color:#0ef;
+}
+.container1 .box1{
+    display:flex;
+    flex-direction: column;
+    gap:23px;
+    width:40%;
+    
+}
+.container1 .box1 .get{
+ font-size:30px;
+}
+.container1 .box1 .sub{
+    display:flex;
+    gap:15px;
+    font-size:19px;
+
+   
+}
+
+.container1 .box1 .para1{
+    line-height:27px;
+    font-size:18px;
+}
+.container1 .icon{
+    padding:6px;
+    font-size:22px;
+
+}
+
+.container1 .box1 .content h2{
+    margin-bottom:15px;
+}
+.section1 .container1 .box2{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+.container1 .box2 .con1{
+    display:flex;
+    gap:10px;
+    width:100%;
+    
+}
+::placeholder{
+    padding-left:15px;
+    
+}
+.section1 .container1 .box2 textarea{
+    font-size:18px;
+    background-color:white;
+    border-radius:8px;
+    padding:10px 10px;
+}
+.section1 .container1 .box2 input{
+    padding:12px 15px;
+    width:50%;
+    font-size:18px;
+    border-radius:17px;
+    border:none;
+    background:#0ef;
+    letter-spacing: 0.5px;
+    font-weight:600;
+    outline:none;
+   
+    
+    
+
+}
+.section1 .container1 .box2 button{
+   
+    border-radius:17px;
+    font-size:18px;
+    background:#0ef;
+    letter-spacing: 0.5px;
+    font-weight:600;
+    padding:10px 9px;
+    width:170px;
+    cursor:pointer;
+    
+    
+}
+.section1 .container1 .box2 button:hover{
+    letter-spacing: 0.7px;
+box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+
+
+@media screen and (max-width:800px){
+
+    .header .navbar {
+        display: flex;
+        gap: 30px;
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: -110%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: all 1.5s;
+        z-index: 999;
+        top: 66px;
+        height: 87vh;
+        width: 74%;
+        padding: 37px;
+        background: black;
+      
+    }
+input:checked ~ .navbar{
+        left:0;
+
+    
+}
+.header .logo{
+    font-size:35px;
+}
+.header label i{
+   font-size:26px;
+   display: block;
+}
+}
+@media screen and (min-width:800px) and (max-width:1200px){
+.header .navbar a {
+    font-size: 21px;
+}
+.header .logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+}
+}
+
+@media screen and (max-width:800px){
+    .container1 {
+        
+        flex-direction: column;
+    }
+    .section1 .ct {
+       
+        font-size: 2.7rem;
+    }
+    .section1 .container1 .box1{
+        width:100%;
+        padding:0px 20px;
+    }
+    .section1 .container1 .box2{
+        width:100%;
+        padding:0px 20px;
+
+    }
+    .container1 .box2 .con1 {
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section1 .container1 .box2 input {
+        padding: 12px 15px;
+        width: 100%;
+
+    }
+}
